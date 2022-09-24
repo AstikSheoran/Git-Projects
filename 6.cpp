@@ -35,7 +35,7 @@ void trimSpaces(char input[]) {
 void reverse(char input[]){
     int start = 0, end = length(input) - 1;
     while (start < end){
-        std::swap(input[start++], input[end--])
+        std::swap(input[start++], input[end--]);
     }
 }
 
@@ -54,7 +54,7 @@ int main(){
     char input[1000];
     cin.getline(input, 100); 
     reverseString(input);
-    cout << "ReverseStringWordWise : " << reverseStringWordWise(input) << endl;
+    cout << "ReverseStringWordWise : " << input << endl;
     cout << "Reverse : " << input << endl;
     cout << "Length : " << length(input) << endl;
     trimSpaces(input);
